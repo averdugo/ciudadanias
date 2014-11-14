@@ -1,0 +1,94 @@
+<?php
+/** 
+ * Configuración básica de WordPress.
+ *
+ * Este archivo contiene las siguientes configuraciones: ajustes de MySQL, prefijo de tablas,
+ * claves secretas, idioma de WordPress y ABSPATH. Para obtener más información,
+ * visita la página del Codex{@link http://codex.wordpress.org/Editing_wp-config.php Editing
+ * wp-config.php} . Los ajustes de MySQL te los proporcionará tu proveedor de alojamiento web.
+ *
+ * This file is used by the wp-config.php creation script during the
+ * installation. You don't have to use the web site, you can just copy this file
+ * to "wp-config.php" and fill in the values.
+ *
+ * @package WordPress
+ */
+
+// ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
+/** El nombre de tu base de datos de WordPress */
+define('DB_NAME', 'ciudadanias_wp_site');
+
+/** Tu nombre de usuario de MySQL */
+define('DB_USER', 'ciudadanias_wp_u');
+
+/** Tu contraseña de MySQL */
+define('DB_PASSWORD', 'Sqwo0_pleQ');
+
+/** Host de MySQL (es muy probable que no necesites cambiarlo) */
+define('DB_HOST', 'localhost');
+
+/** Codificación de caracteres para la base de datos. */
+define('DB_CHARSET', 'utf8');
+
+/** Cotejamiento de la base de datos. No lo modifiques si tienes dudas. */
+define('DB_COLLATE', '');
+
+/** Enable W3 Total Cache */
+define('WP_CACHE', true); // Added by W3 Total Cache
+
+/**#@+
+ * Claves únicas de autentificación.
+ *
+ * Define cada clave secreta con una frase aleatoria distinta.
+ * Puedes generarlas usando el {@link https://api.wordpress.org/secret-key/1.1/salt/ servicio de claves secretas de WordPress}
+ *
+ * @since 2.6.0
+ */
+define('AUTH_KEY', 'L-QKn+9%[| +4agI)4NhCAd jCa;G&@X3!b(Y..<*($@E #zr)N*D$2).~e9S5dw'); // Cambia esto por tu frase aleatoria.
+define('SECURE_AUTH_KEY', 'Aafzi:kVF5FX_1Ml~_el CAUSS`N|oI5{xA)CGv-rMT{h0]QV*tr7Qz<*Z_D3V`x'); // Cambia esto por tu frase aleatoria.
+define('LOGGED_IN_KEY', 'awWQ9(*ArbHK:SY;L)4mF?t`/0j5frKLJ.50Y7Ud4{i!q~+/~bamy.!YQ6.qu:*L'); // Cambia esto por tu frase aleatoria.
+define('NONCE_KEY', '>Hw-+weQI,EO22+uXt|~?H}FnUlNho:E1+V4q].%64/%h.[8Ek`nRc(=/]D7]B42'); // Cambia esto por tu frase aleatoria.
+define('AUTH_SALT', 'qlwdYgeHbbC 2v^.,Ywu|R-jN)S,wU%SONNxdq/~|l!&t a j@t1X`x_JNX{WjFX'); // Cambia esto por tu frase aleatoria.
+define('SECURE_AUTH_SALT', 'qba`7H1EoPZ+ W0Y.^X0JUXUp;Cf&]Pns2=dqg}XZBT)+ARHW&g]|?hSauU8G;V)'); // Cambia esto por tu frase aleatoria.
+define('LOGGED_IN_SALT', 'RrD`[%WLj fmH&BzqV^mLYf:9^(l7n`&6m:bPTiyCex8I]P$}*D`%UjpH218#2C#'); // Cambia esto por tu frase aleatoria.
+define('NONCE_SALT', '$h*1t}GcKfPWFGy_Ex>oCOJh|+5&r;Dk%TI{se{}|ZcHgl0&mP;-aoT0D:Q2#h5`'); // Cambia esto por tu frase aleatoria.
+/**#@-*/
+
+/**
+ * Prefijo de la base de datos de WordPress.
+ *
+ * Cambia el prefijo si deseas instalar multiples blogs en una sola base de datos.
+ * Emplea solo números, letras y guión bajo.
+ */
+$table_prefix  = 'wp_';
+
+/**
+ * Idioma de WordPress.
+ *
+ * Cambia lo siguiente para tener WordPress en tu idioma. El correspondiente archivo MO
+ * del lenguaje elegido debe encontrarse en wp-content/languages.
+ * Por ejemplo, instala ca_ES.mo copiándolo a wp-content/languages y define WPLANG como 'ca_ES'
+ * para traducir WordPress al catalán.
+ */
+define ('WPLANG', 'es_ES');
+
+/**
+ * Para desarrolladores: modo debug de WordPress.
+ *
+ * Cambia esto a true para activar la muestra de avisos durante el desarrollo.
+ * Se recomienda encarecidamente a los desarrolladores de temas y plugins que usen WP_DEBUG
+ * en sus entornos de desarrollo.
+ */
+define('WP_DEBUG', false);
+
+/* ¡Eso es todo, deja de editar! Feliz blogging */
+
+/** WordPress absolute path to the Wordpress directory. */
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(__FILE__) . '/');
+
+/** Sets up WordPress vars and included files. */
+require_once(ABSPATH . 'wp-settings.php');
+
+define('DISABLE_WP_CRON', true);
+?>

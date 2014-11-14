@@ -1,0 +1,111 @@
+/* Clearfix */
+.clearfix:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+.clearfix {display: inline-block;}
+html[xmlns] .clearfix {display: block;}
+* html .clearfix {height: 1%;}
+
+.contactoCiudadanias{ list-style:none; }
+.contactoCiudadanias div.wpcf7 div.cf7com-links { text-align: right;font-size: .8em;margin-top: -1.6em; }
+.contactoCiudadanias div.wpcf7 div.cf7com-links a { text-decoration: none; }
+.contactoCiudadanias div.wpcf7 div.donation { border-width: 1px;border-style: solid;padding: 0 0.6em;margin: 5px 0 15px;-moz-border-radius: 3px;-khtml-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;	background-color: #ffffe0;border-color: #e6db55;text-align: center; }
+.contactoCiudadanias div.wpcf7 div.donation p { margin: .7em 0;line-height: 1;padding: 2px;font-size: 107%; }
+.contactoCiudadanias div.wpcf7 div.donation p a { font-weight: bold;color: #3f3f3f; }
+.contactoCiudadanias div.wpcf7 div.donation p a.button { margin-left: 1em; }
+.contactoCiudadanias div.wpcf7 ul.subsubsub { white-space: normal; }
+.contactoCiudadanias ul.subsubsub li.addnew { margin-left: 0.5em; }
+.contactoCiudadanias ul.subsubsub li.addnew a { color: #e6255b; }
+.contactoCiudadanias ul.subsubsub li.addnew a:hover,
+.contactoCiudadanias ul.subsubsub li.addnew a:active { color: #999; }
+.contactoCiudadanias div.save-contact-form { padding: 1.4em 0 0 0;text-align: right; }
+.contactoCiudadanias div.actions-link { position: absolute;top: 0;right: 0;margin: 0;padding: 0; }
+.contactoCiudadanias div.actions-link input { padding: 0;margin: 0;border: none;background-color: #fff;	font-size: 11px;cursor: pointer; }
+.contactoCiudadanias div.actions-link input.copy { color: #006505; }
+.contactoCiudadanias div.actions-link input.delete { color: #bc0b0b; }
+.contactoCiudadanias input#wpcf7-title { color: #555;background-color: #fff;border: none;font: bold 20px serif; }
+.contactoCiudadanias p.tagcode { color: #333;margin: 2ex 0 1ex 1em; }
+.contactoCiudadanias input#contact-form-anchor-text { color: #fff;background: #7e4e0b;border: none;width: 99%;-moz-border-radius: 6px;-khtml-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px; }
+.contactoCiudadanias span#message-fields-toggle-switch, span#additional-settings-fields-toggle-switch { margin-left: 1em;font-weight: normal;font-size: smaller;color: #2583ad;cursor: pointer; }
+.contactoCiudadanias div.pseudo-hr { border-bottom: 1px solid #fff;margin: 0.7em 0; }
+.contactoCiudadanias input, textarea { border: 1px solid #dfdfdf; }
+.contactoCiudadanias input.wide { width: 100%; }
+.contactoCiudadanias textarea { width: 100%; }
+.contactoCiudadanias label.disabled { color: #777; }
+.contactoCiudadanias div.message-field { margin: .2em 0 .4em; }
+.contactoCiudadanias div.tag-generator { position: relative;background: #fff;padding: 5px 0 5px 1px; }
+.contactoCiudadanias div.tg-pane { border: 1px dashed #999;background: #f1f1f1;margin: 1ex 0 0 0;padding: 10px;-moz-border-radius: 6px;-khtml-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px; }
+.contactoCiudadanias div.tg-pane table {width: 100%;margin: 0 0 0.7em 0; }
+.contactoCiudadanias div.tg-pane table caption { text-align: left;padding: 0 0 0.2em 0;font-weight: bolder;color: #777; }
+.contactoCiudadanias div.tg-pane table code { background-color: inherit; }
+.contactoCiudadanias div.tg-pane table td { vertical-align: top;width: 50%;border: none; }
+.contactoCiudadanias div.tg-pane input.tag, div.tg-pane input.mail-tag { width: 100%;border: none;color: #fff;background-color: #7e4e0b;-moz-border-radius: 6px;-khtml-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px; }
+.contactoCiudadanias div.tg-pane input.mail-tag { width: 50%;background-color: #404f03; }
+.contactoCiudadanias div.tg-mail-tag { margin-top: 2.4em;text-align: right; }
+.contactoCiudadanias div.tg-pane span.arrow { font-family: monospace;font-size: 1.2em;color: #333; }
+.contactoCiudadanias div.tg-pane input.tg-name { border-color: #555; }
+.contactoCiudadanias div.tg-pane input.oneline { width: 98%;font-size: smaller; }
+.contactoCiudadanias div.tg-pane textarea { width: 98%;height: 100px;font-size: smaller; }
+.contactoCiudadanias div.tg-pane div.tg-tag { margin: .4em 0; }
+.contactoCiudadanias div.tg-dropdown { position: absolute;top: 26px;left: 0;z-index: 10; border: 1px solid #ddd; }
+.contactoCiudadanias span.tg-closebutton { color: #777;font: bold 18px monospace;padding: 1px 4px;cursor: pointer; }
+.contactoCiudadanias div.tg-panetitle { font: bold 132% sans-serif;margin: 0 0 10px;color: #777; }
+.contactoCiudadanias .wpcf7-response-output{ background:none repeat scroll 0 0 white;line-height:20px;padding:10px;position:absolute;top:430px!important; }
+
+.contactoCiudadanias label.error{ background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #FF0000;font-size: 10pt;left: 20%;padding: 2px;position: absolute;top: 20%;width: 280px;z-index: 100; }
+.contactoCiudadanias span.consulta{ display:block;height:108px; }
+.contactoCiudadanias span.consulta label.error{ height:102px; }
+.contactoCiudadanias span.ascendencia label.error{ left:0px;top:0px;width:246px;height:auto; }
+.contactoCiudadanias .formWrapper label.error{ left:0;line-height:18px;top:0;width:246px; }
+.contactoCiudadanias label.ascendencia{ font-size:14px;line-height:18px; }
+.contactoCiudadanias span.ascendencia label{ font-size:12px; }
+.contactoCiudadanias .font-min{ font-size:11px; }
+.contactoCiudadanias p.leyenda{ font-size:11px;color:#20B8E3;line-height:16px;padding:10px 0 5px; }
+.contactoCiudadanias .left{ float:left; }
+.contactoCiudadanias .column{ width:110px;padding:5px 0 0; }
+
+.contactoCiudadanias .custom-wpcf7-localidad{ display:none; }
+
+/* Page Template */
+.page-template-tpldevtestlandingfacebook-php .custom-form-box,
+.page-template-tpllandingfacebook-php .custom-form-box{ margin:30px 0 0; }
+.page-template-tpldevtestlandingfacebook-php .contactoCiudadanias .formWrapper,
+.page-template-tpllandingfacebook-php .contactoCiudadanias .formWrapper{ padding:15px 22px; }
+.page-template-tpldevtestlandingfacebook-php .contactoCiudadanias .widgettitle,
+.page-template-tpllandingfacebook-php .contactoCiudadanias .widgettitle{ display:none; }
+.page-template-tpllandingfacebook-php #footer #footerWrapper .wide-box,
+.page-template-tpldevtestlandingfacebook-php #footer #footerWrapper .wide-box{ height:630px; }
+
+/* Multiselect */
+.ui-multiselect { padding:2px 0 2px 4px; text-align:left }
+.ui-multiselect span.ui-icon { float:right }
+.ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
+.ui-multiselect-single .ui-multiselect-checkboxes label { padding:5px !important }
+
+.ui-multiselect-header { margin-bottom:3px; padding:3px 0 3px 4px }
+.ui-multiselect-header ul { font-size:0.9em }
+.ui-multiselect-header ul li { float:left; padding:0 10px 0 0 }
+.ui-multiselect-header a { text-decoration:none }
+.ui-multiselect-header a:hover { text-decoration:underline }
+.ui-multiselect-header span.ui-icon { float:left }
+.ui-multiselect-header li.ui-multiselect-close { float:right; text-align:right; padding-right:0 }
+
+.ui-multiselect-menu { display:none; padding:3px; position:absolute; z-index:10000; text-align: left }
+.ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:scroll }
+.ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; padding:3px 1px }
+.ui-multiselect-checkboxes label input { position:relative; top:1px }
+.ui-multiselect-checkboxes li { clear:both; font-size:0.9em; padding-right:3px }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label { text-align:center; font-weight:bold; border-bottom:1px solid }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a { display:block; padding:3px; margin:1px 0; text-decoration:none }
+button.ui-multiselect span{ font-size:12px;float:left;color:#8E8E8E; }
+.ui-multiselect-checkboxes li{ font-size: 12px; }
+button.ui-state-active span,
+.ui-state-hover,
+.ui-state-focus,
+.ui-widget-header .ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus{ color:#20B8E3!important; }
+.ui-widget-header .ui-state-hover{ border:1px solid #20B8E3!important; }
+.ui-multiselect-checkboxes{ height:223px!important;overflow:hidden; }
+
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label { border:none }

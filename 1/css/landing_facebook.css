@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+.clear{clear:both;}
+
+/*GLOBAL FRAMEWORK V1.74 - AUTHORIZED PERSONNEL ONLY - EYES ONLY - W3C VALID*/
+* {margin: 0px; padding: 0px; border: 0px none; outline: 0px;}
+BODY.fbreset {
+	font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif; 
+	color: #fff !important; 
+	width: 420px;
+	margin:0; padding:0; border:0;
+	overflow:hidden;
+}
+.fbreset {
+	color: #fff !important; 
+}
+P, TD, TH, DIV, SPAN, LI {font: 11px Verdana, Arial, Helvetica, sans-serif;}
+H1, H2, H3, H4, H5, H6 {font-weight: normal; font-size: 100%; display: block}
+STRONG {font-weight: bold}
+TABLE {border-collapse: collapse; border-spacing: 0;}
+TH {text-align: left;}
+TD, TH {empty-cells: show}
+INPUT, SELECT, TEXTAREA { font: 11px Verdana, Arial, Helvetica, sans-serif; color: #000; background: #FFF;}
+TEXTAREA {overflow:auto;}
+/*UL, LI {list-style: none;}
+*/HR {color: #CCC; background: #CCC; height: 1px; border: 1px none #CCC;}
+A {text-decoration: none; cursor:pointer;}
+
+/*Cleaners*/
+.CleanFloats{clear: both; float: none; height: 0px;}
+.Clearfix:after {/*W3C*/
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden;
+}
+*+html .Clearfix {min-height: 1%;} /*IE7*/
+* html .Clearfix {height:1%;} /*IE6*/
+
+/*FIN GLOBAL*/
+#MainBox{ 
+	width:520px; 
+	overflow: hidden;
+}
+
+/*HEADER*/
+#header{}
+#header A{ }
+#header IMG{}
+
+/*CONTENT*/
+#content{ background: #136FA0 url(../images/bg_facebook.jpg) repeat-x; padding-top: 20px; color: #fff; }
+#content H2{font: 28px "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:bold; text-align:center; }
+#content H3{font: 22px "Trebuchet MS", Arial, Helvetica, sans-serif; padding-bottom:38px; text-align:center; }
+/*.ie6 #content H3{margin-bottom:20px; }*/
+#content UL LI{font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;list-style-image:url(../images/bullet.png); margin-bottom:5px;}
+/*.ie7 #content UL LI, .ie6 #content UL LI{padding-left:10px;}*/
+#content UL { display:block; margin:20px 0 24px 50px;}
+/*.ie6 #content UL, .ie7 #content UL  { margin-top:10px;}*/
+#content .roundbox{  float:left; margin-bottom:12px; width:291px; margin-left: 114px; }
+/*.ie6 #content .roundbox{ float:left; margin-right:-4px; width:291px; height:391px; margin-left: 114px;  }*/
+#content #formcont{ background: #fafafa; width:291px; }
+#content .roundbox img{}
+#content .roundbox img.rbbot { }
+#content .roundbox P{color:#41403e;font:10px "Trebuchet MS", Arial, Helvetica, sans-serif; float:left; width:200px; line-height:11px; margin-left:5px;}
+#MainBox.thanks #content{ padding-bottom: 10px; padding-top:0; }
+#MainBox.thanks #content P{font:16px "Georgia", Times New Roman, Times, serif; margin-top:25px; clear: both; padding-left: 10px;}
+#MainBox.thanks #content H2{float:left;font: 26px "Georgia", Times New Roman, Times, serif;font-weight:bold;float:left; margin-top:50px; width:420px; margin-bottom:50px;}
+
+/*FORM*/
+FORM{ padding-top:20px; padding-left:20px; color:#41403e; width:250px; margin-left:auto; margin-right:auto; font:10px "Trebuchet MS", Arial, Helvetica, sans-serif; padding-left:10px;}
+INPUT, TEXTAREA{ border:1px #ababab solid; width:235px; margin-bottom:10px;}
+TEXTAREA{ height: 70px; }
+INPUT{ height:18px;}
+INPUT.radio{ height: auto; width: auto; margin-right: 5px; margin-bottom: 3px; }
+LABEL{ margin-bottom:5px;}
+.submit{width:182px; height:39px;background: url(../images/btn.gif) no-repeat 0px 0px; border:none; cursor:pointer; margin-left:30px; }
+
+/*FOOTER*/
+#footer{ background: #353733 url(../images/bg_footer.gif) no-repeat scroll 100% 0; padding-top: 40px; }
+#footer .q{width:440px; margin-left:77px; }
+#footer img{margin-top:20px; }
+#footer .q P{font:14px "Georgia", Times New Roman, Times, serif; color:#919191; font-weight:bold; }
+#footer .q P SPAN{font:14px "Georgia", Times New Roman, Times, serif; color:#919191; margin-top:10px; }
+#footer h4{font:32px "Georgia", Times New Roman, Times, serif; color:#919191; font-weight:bold; margin:10px; }
+#footer .contacto{  text-align:center;}
+#footer .contacto P{ font:14px "Georgia", Times New Roman, Times, serif; color:#919191;  }
+#footer P.copy { font:9px Verdana, Geneva, sans-serif; color:#919191; text-align:center}

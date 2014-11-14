@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Ciudadaniaseuropeas, tu pasaporte al mundo</title>
+        <link href="css/landing_facebook.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css" media="screen" charset="utf-8" />
+        <script type="text/javascript" src="scripts/jquery-1.6.1.min.js"></script>
+        <script type="text/javascript" src="scripts/funciones.js"></script>
+        <script src="scripts/jquery.validationEngine-es.js" type="text/javascript"></script>
+        <script src="scripts/jquery.validationEngine.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="MainBox" class="esp">
+            <div id="header">
+				<a href="http://www.ciudadaniaseuropeas.com/" title="ciudadaniaseuropeas.com"><img src="images/bg_header_facebook.jpg" alt="ciudadaniaseuropeas.com" width="520" height="285" /></a>
+            </div><!--header ENDS-->
+            <div id="content">
+                <h2>Tramitamos tu Ciudadanía Europea</h2>
+                <ul>
+                    <li>Desde cualquier punto del país, con garantía escrita.</li>
+                    <li>Rastreamos documentación a nivel global.</li>
+                    <li>18 años de experiencia.</li>
+                    <li>29.000 ciudadanías tramitadas.</li>
+                </ul>
+                <h3>¡Envianos tu consulta y confirmá si podés
+                tramitar tu ciudadanía europea!</h3>
+                <div class="roundbox">
+                    <div id="formcont">
+                    
+	                    <form action="contact_facebook.php" method="post" id="commentForm">
+	                        <fieldset>
+	                            <label for="nombre">Nombre y apellido:</label>
+	                            <input type="text" id="nombre" name="nombre" class="validate[required,length[0,100]]"/>
+	                            <label for="telefono">Teléfono:</label>
+	                            <input type="text" id="telefono" name="telefono" class=""/>
+	                            
+	                            <label for="apellido">Email:</label>
+	                            <input type="text" id="email" name="email" class="validate[required,custom[email]]"/>
+	                            <label for="email2">Confirmar Email:</label>
+	                            <input type="text" id="email2" name="email2" class="validate[required,custom[email],equals[email]]"/>
+	                            
+	                            <label for="ubicacion">Ubicación:</label><br>
+	                            <input type="radio" name="ubicacion" class="radio" value="Gran Buenos Aires y Capital Federal" />Gran Buenos Aires y Capital Federal<br>
+	                            <input type="radio" name="ubicacion" class="radio" value="Otros" />Otros<br><br>
+	                            
+	                            <label for="consulta">Consulta:</label>
+	                            <textarea id="consulta" name="consulta" cols="20" rows="4" class="validate[required]"></textarea>
+	                            <input type="submit" class="submit" value="" />
+	                            <input type="hidden" name="origen" id="origen" value="index" />
+	                        </fieldset>
+	                    </form>
+	                    
+	                    <script type="text/javascript">
+	                    $(document).ready(function() {
+	                        $("#commentForm").validationEngine()
+	                    })
+	                    </script>
+	                    
+	                    <img src="images/atencion.gif" width="38" height="42" alt="atencion" style="margin-left:40px" />
+	                    <p>Si tenés más de un ascendiente europeo, 
+	                    señalá cada línea por separado y 
+	                    evaluaremos la mejor opción.<br /><br />
+	                    
+	                    Por ejemplo:<br />
+	                    <strong>Bisabuelo italiano > Abuelo > Madre > Yo
+	                    Abuelo polaco > Padre > Yo</strong><br/><br/></p>
+                    
+                    	<div class="clear"></div>
+                    </div>
+                </div> <!--formcont ENDS-->
+                
+                <img src="images/asociaciones.jpg" width="455"  height="48" alt="Asociados a la Cámara de Comercio Italiana de la República Argentina y a la Cámara Argentina Portuguesa de Comercio" style="margin-left:20px;" />
+
+            </div><!--content ENDS-->
+            <div id="footer">
+                <img src="images/bubble.png" width="67"  height="51" alt="" style="float:left; position: relative; top:-20px;" />
+                <div class="q"><p>No cambié mi proyecto de seguir viviendo en Argentina, pero me 
+                doy cuenta que cuando quiero fantasear con pasarme una buena 
+                temporada allá, poner una fonda, o vivir un tiempo en cada país, 
+                puedo continuar mi fantasía con total libertad.<br /><br /><span>Fernando Sendra - Escritor, Dibujante, Creador de "Yo, Matías"</span></p></div>
+                <div class="contacto">
+	                <p>Comunicate con nosotros de 8 a 18 hs.</p>
+	                <h4>(011) 4393-7070</h4>
+	                <p>Líneas rotativas</p>
+	                <p>&nbsp;</p>
+	                <p><span style="color:#3CF; font-style:italic; ">Skype:</span> ciudadaniaseuropeas.com</p>
+                </div>
+                <img src="images/hline.png" width="520"  height="3" />
+                <p class="copy">© 1997 - 2009 | ciudadaniaseuropeas.com | All rights reserved</p>
+            </div><!--footer ENDS-->
+        </div><!--MainBox ENDS-->
+        
+        <div id="fb-root"></div>
+        <script src="https://connect.facebook.net/en_US/all.js"></script>
+        <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId   : '121560511257954',
+                status  : true, // check login status
+                cookie  : true, // enable cookies to allow the server to access the session
+                xfbml   : true // parse XFBML
+            });     
+			FB.Canvas.setAutoGrow();
+		}
+		</script>        
+        
+    </body>
+</html>
