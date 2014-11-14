@@ -1669,37 +1669,6 @@ body.legales-2014 #big-footer div a{
 body.legales-2014 #big-footer div a:hover{
 	border-bottom: 4px solid #1e6a93;
 }
-body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container{
-	width: 100% !important;
-}
-body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container{
-	margin: 5px 0 25px;
-}
-
-body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-single{
-	color: #FFF;
-	box-shadow: none;
-	border: none;
-	background: #2a4d69;
-}
-body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-single div{
-	width: 36px;
-}
 body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-single div b{
 	background: url('images/landing-2014/chosen-arrow.png') no-repeat center 16px;
-}
-body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-single,
-body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-single span{
-	height: 35px;
-	line-height: 35px;
-}
-body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-drop{
-	color: #ffffff;
-	background: #2a4d69;
-	border: none;
-}
-body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-search input{
-	margin: 0;
-	background: #fff;
-	color: #2a4d69;
 }
