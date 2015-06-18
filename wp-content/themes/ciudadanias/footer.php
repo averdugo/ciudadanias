@@ -49,7 +49,7 @@
 				<div class="h3">Social media</div>
 				<div id="footer-social-icons">
 					<a href="http://www.facebook.com/ciudadanias.europeas" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/facebook-shadow.png" alt="facebook"></a>
-					<a href="http://twitter.com/ciudadaniaseuro" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/twitter-shadow.png" alt="twitter"></a>
+					<a href="http://www.linkedin.com/company/ciudadaniaseuropeas-com" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin-shadow.png" alt="linkedin"></a>
 					<a href="http://www.facebook.com/ciudadanias.europeas" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/blogspot-shadow.png" alt="blogspot"></a>
 				</div>
 				<a href="#" id="logo-footer"><img src="<?php bloginfo('template_directory'); ?>/images/logo-footer.png" alt="Ciudadanias Europeas"> </a>
@@ -62,6 +62,8 @@
 			<div class="clear-both"></div>
 		</div>
 	</div>
+
+
 </div>
 
 <?php wp_footer(); ?>
@@ -77,26 +79,24 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 })();
 </script>
 
-<?php get_template_part( 'googlecode', 'remarketing' ); ?>
-
-<!-- Google Code for Ciudadanias Conversion Page -->
+<!-- Google Code para etiquetas de remarketing -->
+<!--------------------------------------------------
+Es posible que las etiquetas de remarketing todavía no estén asociadas a la información de identificación personal o que estén en páginas relacionadas con las categorías delicadas. Para 
+obtener más información e instrucciones sobre cómo configurar la etiqueta, consulte http://google.com/ads/remarketingsetup.
+--------------------------------------------------->
 <script type="text/javascript">
-  /* <![CDATA[ */
-  var google_conversion_id = 969797741;
-  var google_conversion_language = "en";
-  var google_conversion_format = "3";
-  var google_conversion_color = "ffffff";
-  var google_conversion_label = "uSWKCNOQgwgQ7eC3zgM";
-  var google_remarketing_only = false;
-  /* ]]> */
+/* <![CDATA[ */
+var google_conversion_id = 969797741;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
 </script>
 <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 </script>
-
 <noscript>
-  <div style="display:inline;">
-    <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/969797741/?label=uSWKCNOQgwgQ7eC3zgM&amp;guid=ON&amp;script=0"/>
-  </div>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/969797741/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
 </noscript>
 
 </body>
