@@ -80,10 +80,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </script>
 
 <!-- Google Code para etiquetas de remarketing -->
-<!--------------------------------------------------
-Es posible que las etiquetas de remarketing todavía no estén asociadas a la información de identificación personal o que estén en páginas relacionadas con las categorías delicadas. Para 
-obtener más información e instrucciones sobre cómo configurar la etiqueta, consulte http://google.com/ads/remarketingsetup.
---------------------------------------------------->
 <script type="text/javascript">
 /* <![CDATA[ */
 var google_conversion_id = 969797741;
