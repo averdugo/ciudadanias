@@ -5,7 +5,7 @@ Description: Tema para el sitio web de ciudadanias europeas
 Author: Gonzalo Escribano
 Version: 1.0
 */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -1469,10 +1469,29 @@ body.legales-2014 .israel-content-wraper{
 body.legales-2014 .israel-content-wraper .col-izq,
 body.legales-2014 .israel-content-wraper .col-der{
 	float: left;
-	height: 535px;
+	max-height: 0px;
+	min-height: 610px;
+	-webkit-transition: min-height .5s ease-in-out;  
+	-moz-transition:    min-height .5s ease-in-out;
+	-ms-transition:     min-height .5s ease-in-out; 
+	-o-transition:      min-height .5s ease-in-out;  
+}
+
+body.legales-2014 .israel-content-wraper .col-der.opened{
+	max-height: 0px;
+	min-height: 693px;
 }
 body.legales-2014 .israel-content-wraper .col-izq{
 	width: 505px;
+}
+
+body.legales-2014 .israel-content-wraper .col-izq h2{
+	margin: 20px 20px 0 0;
+	font-size: 28px;
+	line-height: 2;
+	font-weight: 500;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	padding: 0;
 }
 
 /*body.legales-2014 .israel-content-wraper .col-izq{ float: left; }
@@ -1525,7 +1544,9 @@ body.legales-2014 .israel-content-wraper .col-der .content .formWrapper input{
 	border: 0;
 	border-radius: 2px;
 }
-
+body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .wpcf7-form {
+	position: inherit;
+}
 body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .wpcf7-form-control-wrap,
 body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container{
 	width: 100% !important;
@@ -1570,6 +1591,8 @@ body.legales-2014 .israel-content-wraper .col-der .content .formWrapper #send-bt
 	width: 260px;
 	height: 65px;
 	background: url('images/legales-2014/submit.png') no-repeat 0 0;
+	position: absolute;
+	bottom: 20px;
 }
 body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .ajax-loader{
   right: 13px;
@@ -1603,8 +1626,17 @@ body.legales-2014 .israel-content-wraper .col-der .content .formWrapper input[ty
 }
 body.legales-2014 .israel-content-wraper .col-der .content .center {
 	width: 305px;
-	height: 450px;
+	min-height: 525px;
 	background: #0f3553;
+	position: relative;
+	-webkit-transition: min-height .5s ease-in-out;  
+	-moz-transition:    min-height .5s ease-in-out;
+	-ms-transition:     min-height .5s ease-in-out; 
+	-o-transition:      min-height .5s ease-in-out;  
+}
+
+body.legales-2014 .israel-content-wraper .col-der .content .center.opened {
+		min-height: 600px;
 }
 
 body.legales-2014 .israel-content-wraper .col-der .content .arrow-up {
@@ -1671,4 +1703,488 @@ body.legales-2014 #big-footer div a:hover{
 }
 body.legales-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-single div b{
 	background: url('images/landing-2014/chosen-arrow.png') no-repeat center 16px;
+}
+
+/* MAIN 2014 */
+body.main-2014{
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+}
+
+body.main-2014 .israel-header{
+	text-align: center;
+	min-height: 254px;
+	background: url(images/main-2014/header/main.jpg) no-repeat top left;
+	background-size: cover;
+}
+/*
+body.main-2014 .israel-header{
+	max-height: 200px;
+	min-height: 0px;
+	text-align: left;
+}
+*/
+body.main-2014 .israel-header .logo{
+	margin: 40px 0 20px 0;
+}
+
+body.main-2014 .israel-header h1{
+	font-size: 37px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+body.main-2014 .israel-wraper{
+	background: url(images/main-2014/bg-blue.png) no-repeat top left;
+	background-size: cover;
+		
+}
+
+body.main-2014 .israel-content-wraper{
+	padding: 0px!important;
+	min-height: 590px!important;
+	/*max-width: 833px;*/
+	background: url(images/main-2014/bg-flag-main.png) no-repeat bottom left;
+}
+
+body.main-2014 .israel-content-wraper .col-izq,
+body.main-2014 .israel-content-wraper .col-der{
+	float: left;
+	height: 730px;
+}
+body.main-2014 .israel-content-wraper .col-izq{
+	width: 490px;
+}
+
+/*body.main-2014 .israel-content-wraper .col-izq{ float: left; }*/
+body.main-2014 .israel-content-wraper .col-der{ height: 705px; }
+body.main-2014 .israel-content-wraper .col-izq ul{
+	width: 420px;
+	padding-top: 67px;
+	padding-left: 0px;
+	display: table;
+}
+
+body.main-2014 .israel-content-wraper .col-izq ul li{ 
+	display: table-row;
+	height:100px;
+}
+
+body.main-2014 .israel-content-wraper .col-izq ul li h3{ 
+	font-size: 19px;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 75px;
+}
+
+body.main-2014 .israel-content-wraper .col-izq ul li:nth-child(1) {background: url(images/main-2014/icons/cells/cell_1.png) no-repeat center left;}
+body.main-2014 .israel-content-wraper .col-izq ul li:nth-child(2) {background: url(images/main-2014/icons/cells/cell_2.png) no-repeat center left;}
+body.main-2014 .israel-content-wraper .col-izq ul li:nth-child(3) {background: url(images/main-2014/icons/cells/cell_3.png) no-repeat center left;}
+body.main-2014 .israel-content-wraper .col-izq ul li:nth-child(4) {background: url(images/main-2014/icons/cells/cell_4.png) no-repeat center left;}
+
+body.main-2014 .israel-content-wraper .col-der .content{
+	position: relative;
+	top: -50px;
+}
+
+body.main-2014 .israel-content-wraper .col-der .center .formWrapper {
+	padding: 0 38px 15px;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content label{
+	margin-bottom: 8px;
+	display: block;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content label:nth-child(1){
+	margin-bottom: -10px;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content label .form-star{
+	color: #ffde00;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper{
+	padding-top: 25px;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper input{
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper input{
+	width: 100%;
+	color: #FFF;
+	background: #2a4d69;
+	margin: 5px 0 12px;
+	padding: 10px;
+	border: 0;
+	border-radius: 2px;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .wpcf7-form-control-wrap,
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container{
+	width: 100% !important;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container{
+	margin: 5px 0 25px;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-single{
+	color: #FFF;
+	box-shadow: none;
+	border: none;
+	background: #2a4d69;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-single div{
+	width: 36px;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-single,
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-single span{
+	height: 35px;
+	line-height: 35px;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-drop{
+	color: #ffffff;
+	background: #2a4d69;
+	border: none;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-search input{
+	margin: 0;
+	background: #fff;
+	color: #2a4d69;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .ascendencia{
+	/*display: none;*/
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .ascendencia div{
+	position: relative;
+	margin-bottom: 10px;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .ascendencia input {
+	width: 13px;
+	height: 13px;
+	color: #FFF;
+	background: #2a4d69;
+	margin: 5px 8px 5px 0px;
+	border: 0;
+	border-radius: 2px;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .ascendencia label {
+	display:inline;
+	margin-left: 25px;
+	top: 5px;
+	cursor: pointer;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .ascendencia input[type=checkbox] {
+	display: none;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .ascendencia .radio-style:before {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	border-radius:50%;
+	position: absolute;
+	left: 0;
+	top: 2px;
+	bottom: 1px;
+	background-color: #2a4d69;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .ascendencia .radio-style-down {
+	margin-top: 2px;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .ascendencia .radio-style-down:before {
+	margin-top: 5px;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .ascendencia input[type=checkbox]:checked + .radio-style:before {
+  content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius:50%;
+	position: absolute;
+	left: 0;
+	top: 2px;
+	bottom: 1px;
+	background-color: #ffde00;
+	border: #2a4d69 4px solid;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper #submitMsgBox{
+	color: #0f3553;
+	border: 2px solid #43c184;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper #send-btn{
+	margin: 0;
+	padding: 0;
+	width: 264px;
+	height: 42px;
+	background: url('images/main-2014/submit.png') no-repeat 0 0;
+	background-size: contain;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .ajax-loader{
+  right: 13px;
+	bottom: 22px;
+  position: absolute;
+  visibility: visible;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper label.error{
+	width: auto;
+	color: #333333;
+	top: 14px;
+	padding: 2px 5px;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper span.servicio {
+
+	padding-left: 20px;
+	width: 130px;
+
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper input[type='radio'] {
+
+	width: 25px;
+
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper input[type='submit']{
+	font-size: 27px;
+	font-family: 'Open Sans', sans-serif;
+	background: #43c184;
+	border-radius: 0;
+	height: 60px;
+}
+body.main-2014 .israel-content-wraper .col-der .content .center {
+	width: 350px;
+	height: 630px;
+	background: #0f3553;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 175px solid transparent;  /* left arrow slant */
+    border-right: 175px solid transparent; /* right arrow slant */
+    border-bottom: 20px solid #0f3553; /* bottom, add background color here */
+    font-size: 0;
+    line-height: 0;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .arrow-down {
+   width: 350px;
+	height: 180px;
+	color: #fafafa;
+	text-align: right;
+	background: url('images/main-2014/sidebar-bottom-bg.png') no-repeat 0 0;
+	background-size: contain;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .arrow-down p{
+	padding: 0 33px 0 20px;
+	font-size: 18px;
+	line-height: 16px;
+	margin-right: 15px;
+}
+body.main-2014 .israel-content-wraper .col-der .content .arrow-down .title{
+	color: #ffde00;
+	padding-top: 36px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+body.main-2014 .israel-content-wraper .col-der .content .arrow-down p span{
+	font-size: 16px;
+	display: block;
+	margin-bottom: 5px;
+}
+
+body.main-2014 .israel-content-wraper .col-der .content .arrow-down p a{
+	color: #fafafa;
+	text-decoration: none;
+}
+
+body.main-2014 #big-footer{
+	background: #0b273e url('images/main-2014/footer-bg.gif') repeat-x 0 0;
+}
+
+body.main-2014 #big-footer div{
+	width: 960px;
+	margin: 0 auto;
+	padding: 40px 0 0;
+	text-align: center;
+	min-height: 60px;
+}
+body.main-2014 #big-footer div a{
+	color: #ffffff;
+	margin: 0 15px;
+	padding: 0 0 3px;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 4px solid #0b273e;
+}
+
+body.main-2014 #big-footer div a:hover{
+	border-bottom: 4px solid #1e6a93;
+}
+body.main-2014 .israel-content-wraper .col-der .content .formWrapper .chosen-container .chosen-single div b{
+	background: url('images/main-2014/chosen-arrow.png') no-repeat center 16px;
+}
+
+
+
+/*
+|-----------------------------------------
+|	LEGALES LANDING FACEBOOK 2014
+|-----------------------------------------
+*/
+
+body.facebook-legales .main-wraper .home-header-bot{
+	max-height: 200px;
+	min-height: 0px;
+	text-align: left;
+}
+
+body.facebook-legales .main-wraper .home-header-bot img{
+	margin: 0px;
+	max-width: 575px;
+}
+
+body.facebook-legales .main-wraper .israel-wraper #content-wraper{
+	width: auto;
+}
+
+body.facebook-legales .main-wraper .israel-wraper #content-wraper .clearfix{
+	display: block;
+}
+
+
+body.facebook-legales .main-wraper .israel-wraper #content-wraper .ascendencia.clearfix{
+	display: none;
+} 
+
+body.facebook-legales .main-wraper .israel-wraper #content-wraper .clearfix .col-izq{
+	width: auto;
+	padding-left: 30px;
+}
+
+body.facebook-legales .main-wraper .israel-wraper #content-wraper .clearfix .col-der{
+	float: right;
+	padding-right: 15px;
+	/*height: auto!important;*/
+}
+
+body.facebook-legales .main-wraper .israel-wraper #content-wraper .clearfix .col-der .content{
+	margin-bottom: 15px;
+	/*top: -108px!important;*/
+}
+
+
+/*
+body.facebook-legales .main-wraper .israel-wraper #content-wraper .clearfix .col-der .content .center{
+	max-height: 450px;
+}
+
+body.facebook-legales .main-wraper .israel-wraper #content-wraper .clearfix .col-der .content .contactoCiudadanias .formWrapper input{
+	margin-bottom: 15px;
+}
+
+col der 
+
+content 
+*/
+
+body.facebook-legales #big-footer div{
+		width: auto;
+}
+
+/*
+|-----------------------------------------
+|	CIUDADANIAS LANDING FACEBOOK 2014
+|-----------------------------------------
+*/
+
+body.facebook-ciudadanias .main-wraper .home-header-bot{
+	max-height: 200px;
+	min-height: 0px;
+	text-align: left;
+}
+
+body.facebook-ciudadanias .main-wraper .home-header-bot img{
+	margin: 0px;
+	max-width: 575px;
+}
+
+body.facebook-ciudadanias .main-wraper .israel-wraper #content-wraper{
+	width: auto;
+}
+
+body.facebook-ciudadanias .main-wraper .israel-wraper #content-wraper .clearfix{
+	display: block;
+}
+
+body.facebook-ciudadanias .main-wraper .israel-wraper #content-wraper .clearfix .col-izq{
+	width: auto;
+	padding-left: 30px;
+}
+
+body.facebook-ciudadanias .main-wraper .israel-wraper #content-wraper .clearfix .col-izq ul{
+		width: 355px;
+}
+
+body.facebook-ciudadanias .main-wraper .israel-wraper #content-wraper .clearfix .col-der{
+	float: right;
+	padding-right: 15px;
+	/*height: auto!important;*/
+}
+
+body.facebook-ciudadanias .main-wraper .israel-wraper #content-wraper .clearfix .col-der .content{
+	margin-bottom: 15px;
+	/*top: -108px!important;*/
+}
+
+body.facebook-ciudadanias .main-wraper .israel-wraper #content-wraper .clearfix .col-der .content .center {
+	width: 410px;
+	height: 620px;
+}
+
+body.facebook-ciudadanias .main-wraper .israel-wraper #content-wraper .clearfix .col-der .content .center .formWrapper #send-btn{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 53px;
+	background-size: contain;
+}
+
+body.facebook-ciudadanias .main-wraper .israel-wraper #content-wraper .clearfix .col-der .content .arrow-up{
+		border-left: 205px solid transparent;
+		border-right: 205px solid transparent;
+}
+
+body.facebook-ciudadanias .main-wraper .israel-wraper #content-wraper .clearfix .col-der .content .arrow-down{
+	width: 410px;
+	height: 145px;
+	background-size: cover;
+}
+/*
+body.facebook-ciudadanias .main-wraper .israel-wraper #content-wraper .clearfix .col-der .content .center{
+	max-height: 450px;
+}
+
+body.facebook-ciudadanias .main-wraper .israel-wraper #content-wraper .clearfix .col-der .content .contactociudadanias .formWrapper input{
+	margin-bottom: 15px;
+}
+
+col der 
+
+content 
+*/
+
+body.facebook-ciudadanias #big-footer div{
+		width: auto;
 }

@@ -76,7 +76,7 @@ $custom_fields = get_post_custom();
                   <h3>M&aacute;s de 30.000 clientes ya confiaron <br />en nosotros.</h3>
                 </li>
                 <li>
-                  <h3>No es necesario que vivas en Capital Federal.</h3>
+                  <h3>Consultanos desde cualquier lugar del país.</h3>
                 </li>
               </ul>
             </div>

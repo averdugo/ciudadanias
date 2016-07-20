@@ -47,7 +47,7 @@ $custom_fields = get_post_custom();
 					<li>Aceleramos el trámite lo más posible.</li>
 					<li>20 años de experiencia.</li>
 					<li>¡Más de <b>31.000</b> ciudadanías europeas tramitadas!</li>
-					<li>No es necesario que vivas en Capital.</li>
+					<li>Consultanos desde cualquier lugar del país.</li>
 				</ul>
 				<p class="button">¡Envianos tu consulta y confirmá<br/>si podés tramitar tu ciudadanía <?php echo $custom_fields["ciudadania"][0] ?>!</p>
 				<div class="rightCol">

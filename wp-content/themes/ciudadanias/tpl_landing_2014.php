@@ -27,7 +27,7 @@ $custom_fields = get_post_custom();
     <div class="main-wraper">
       <div class="home-header-bot israel-header">
         <img class="logo" src="http://www.ciudadaniaseuropeas.com/wp-content/themes/ciudadanias/images/landing-2014/logo-landings-new.png">
-        <h1>Tramitamos tu ciudadanía Polaca en Israel.</h1>
+        <h1>Tramitamos tu ciudadanía Polaca.</h1>
       </div>
       <div class="israel-wraper">
         <div id="content-wraper" class="israel-content-wraper">
@@ -62,7 +62,7 @@ $custom_fields = get_post_custom();
                   ?>
                 </div>
                 <div class="arrow-down">
-                  <p class="title">comunicate con nostros</p>
+                  <p class="title">comunicate con nosotros</p>
                   <p>
                     <span>(+54.11) 4393-7070<span><br/>
                     skype: ciudadaniaseuropeas.com<br/>
@@ -88,18 +88,5 @@ $custom_fields = get_post_custom();
           <a href="/contacto/">Contacto</a>
         </div>
       </div>
-    <?php //get_template_part( 'googlecode', 'remarketing' ); ?>
-    
-    <script type="text/javascript">
-      //  var _gaq = _gaq || [];
-      //  _gaq.push(['_setAccount', 'UA-8922785-1']);
-      //  _gaq.push(['_trackPageview']);
-      //  (function() {
-      //    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        // ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        // var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      //  })();
-    </script>
-
   </body>
 </html>

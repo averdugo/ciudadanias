@@ -37,6 +37,12 @@ function ciudadanias_widgets_init() {
 		'description' => 'Contacto-legales'
 	) );
 
+/* Widget contacto Main */
+	register_sidebar( array(
+		'name' => 'Contacto-main',
+		'id' => 'contact-form-main',
+		'description' => 'Contacto-main'
+	) );
 }
 
 add_action( 'widgets_init', 'ciudadanias_widgets_init' );
